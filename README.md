@@ -19,7 +19,7 @@ This project demonstrates how to build a simple authentication system in Laravel
 | Bootstrap 5  | Frontend UI styling         |
 
 
-🚀 Setup Steps
+## 🚀 Setup Steps
 
 1️⃣ Install Laravel
 
