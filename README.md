@@ -55,10 +55,6 @@ Manually implement routes, controllers, and Blade views for:
 - Verify email notification page
 - Flash messages for errors and success
 
-🔐 Important Middleware
-
-Apply these middlewares to routes:
-
 ## 🔐 Important Middleware
 Apply these middlewares to routes:
 
