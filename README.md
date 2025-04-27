@@ -1,80 +1,66 @@
-## 🔐 Laravel 10 Authentication with Email Verification & Remember Me
-This project demonstrates how to build a simple authentication system in Laravel 10 from scratch, with support for email verification and the "Remember Me" feature. 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-🧩 What This Project Contains
-- Basic user registration and login
-- Email verification after registration
-- "Remember Me" functionality
-- Access restrictions for unverified users
-- Secure authentication middleware
-- Blade templates styled with Bootstrap 5
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## 🛠️ Tech Stack
+## About Laravel
 
-| Tool         | Purpose                     |
-|--------------|-----------------------------|
-| Laravel 10   | PHP framework               |
-| Blade        | View templating             |
-| Eloquent ORM | Database interaction        |
-| Bootstrap 5  | Frontend UI styling         |
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-## 🚀 Setup Steps
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-1️⃣ Install Laravel
+## Learning Laravel
 
-```bash
-composer create-project laravel/laravel auth-app
-```
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-2️⃣ Setup Authentication
-Manually implement routes, controllers, and Blade views for:
-- Registration
-- Login
-- Logout
-- Dashboard
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-3️⃣ Enable Email Verification
-- Implement MustVerifyEmail in the User model.
-- Use sendEmailVerificationNotification() after registration.
-- Add verification routes (/email/verify, /email/verify/{id}/{hash}).
-- Protect dashboard and authenticated routes with verified middleware.
+## Laravel Sponsors
 
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-4️⃣ Add Remember Me Functionality
-- Use Laravel's Auth::attempt() with the remember flag.
-- Add checkbox in the login form.
+### Premium Partners
 
-5️⃣ Create Views
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-- Build Blade views using Bootstrap 5 for:
-- Registration page
-- Login page
-- Dashboard
-- Verify email notification page
-- Flash messages for errors and success
+## Contributing
 
-## 🔐 Important Middleware
-Apply these middlewares to routes:
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-| Middleware | Purpose                                                  |
-|------------|----------------------------------------------------------|
-| `auth`     | Restrict access to logged-in users only                  |
-| `guest`    | Prevent logged-in users from accessing login/register pages |
-| `verified` | Allow access only after email is verified                |
-| `signed`   | Required for secure email verification links             |
+## Code of Conduct
 
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## 💡 Useful Artisan Commands
+## Security Vulnerabilities
 
-```bash
-php artisan migrate                  # Run migrations
-php artisan serve                    # Start dev server
-php artisan route:list               # View all defined routes
-```
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## 📬 Notes on Email Verification
-Laravel uses a built-in Mailable for verification.
-Email content is auto-generated via Illuminate\Auth\Notifications\VerifyEmail.
-You can override this for custom email design.
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
