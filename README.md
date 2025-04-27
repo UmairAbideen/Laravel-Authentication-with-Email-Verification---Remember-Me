@@ -2,7 +2,7 @@
 This project demonstrates how to build a simple authentication system in Laravel 10 from scratch, with support for email verification and the "Remember Me" feature. 
 
 🧩 What This Project Contains
--✅ Basic user registration and login
+- Basic user registration and login
 -📧 Email verification after registration
 -🔁 "Remember Me" functionality
 -🚫 Access restrictions for unverified users
