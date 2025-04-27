@@ -3,7 +3,7 @@ This project demonstrates how to build a simple authentication system in Laravel
 
 🧩 What This Project Contains
 - Basic user registration and login
-- -Email verification after registration
+- Email verification after registration
 - "Remember Me" functionality
 - Access restrictions for unverified users
 - Secure authentication middleware
